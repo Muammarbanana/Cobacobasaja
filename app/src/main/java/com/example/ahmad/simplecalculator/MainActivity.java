@@ -44,9 +44,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void onClick (View view){
-        if(TextUtils.isEmpty(bil1.getText().toString()) || TextUtils.isEmpty(bil2.getText().toString())){
-            angka1 = 0.0;
-            angka2 = 0.0;
+        if(TextUtils.isEmpty(bil1.getText().toString()) && TextUtils.isEmpty(bil2.getText().toString())){
+            hasil.setText("0");
+        }else if(!TextUtils.isEmpty(bil1.getText().toString()) && TextUtils.isEmpty(bil2.getText().toString())){
+            hasil.setText(bil1.getText().toString());
+        }else if(TextUtils.isEmpty(bil1.getText().toString()) && !TextUtils.isEmpty(bil2.getText().toString())){
+            hasil.setText(bil2.getText().toString());
         }else{
             angka1 = Double.parseDouble(bil1.getText().toString());
             angka2 = Double.parseDouble(bil2.getText().toString());

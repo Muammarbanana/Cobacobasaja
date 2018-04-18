@@ -48,7 +48,7 @@
                 android:text="+"
                 android:textColor="#FFFFFF"
                 android:textSize="30dp"
-                android:background="#5cb85c"/>
+                android:background="@drawable/my_button"/>
 
             <Button
                 android:id="@+id/btn_kurang"
@@ -60,7 +60,7 @@
                 android:text="-"
                 android:textColor="#FFFFFF"
                 android:textSize="30dp"
-                android:background="#5cb85c"/>
+                android:background="@drawable/my_button"/>
 
             <Button
                 android:id="@+id/btn_kali"
@@ -72,7 +72,7 @@
                 android:text="X"
                 android:textColor="#FFFFFF"
                 android:textSize="30dp"
-                android:background="#5cb85c"/>
+                android:background="@drawable/my_button"/>
 
             <Button
                 android:id="@+id/btn_bagi"
@@ -84,7 +84,7 @@
                 android:text=":"
                 android:textColor="#FFFFFF"
                 android:textSize="30dp"
-                android:background="#5cb85c"/>
+                android:background="@drawable/my_button"/>
 
         </LinearLayout>
 
